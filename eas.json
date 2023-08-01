@@ -3,16 +3,13 @@
     "version": ">= 3.17.1"
   },
   "build": {
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal"
-    },
     "preview": {
-      "distribution": "internal"
-    },
-    "production": {}
-  },
-  "submit": {
-    "production": {}
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_WEATHER_APP_ID": "36e0e43d78fc3d3d0aedeb397f6f647c"
+      }
+    }
   }
 }
