@@ -21,7 +21,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#13131A"
-      }
+      },
+      "package": "com.rocketseat.ignite_rn_09_iwaether_deploy"
     },
     "web": {
       "favicon": "./assets/favicon.png"
