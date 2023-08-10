@@ -45,4 +45,4 @@ jobs:
         with:
           eas-version: latest
           packager: npm
-          token:
+          token: ${{ secrets.EAS_EXPO_TOKEN }}
