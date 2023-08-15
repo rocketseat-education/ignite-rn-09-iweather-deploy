@@ -13,7 +13,8 @@
       "ios": {
         "simulator": true,
         "autoIncrement": "buildNumber"
-      }
+      },
+      "channel": "preview"
     },
     "production": {
       "autoIncrement": true,
@@ -23,19 +24,19 @@
       "ios": {
         "image": "latest",
         "autoIncrement": "buildNumber"
-      }
+      },
+      "channel": "production"
     }
   },
   "submit": {
     "preview": {
       "android": {
         "track": "internal",
-        "servicesAccountKeyPath": "google-services.json",
+        // "servicesAccountKeyPath": "google-services.json",
         "releaseStatus": "draft"
       },
       "ios": {
-        "appleId": "rennan.douglas@rocketseat.team",
-        "ascAppId": ""
+        "appleId": "rennan.douglas@rocketseat.team"
       }
     }
   }
