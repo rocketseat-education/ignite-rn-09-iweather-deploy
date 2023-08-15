@@ -1,6 +1,7 @@
 {
   "cli": {
-    "version": ">= 3.17.1"
+    "version": ">= 3.17.1",
+    "appVersionSource": "remote"
   },
   "build": {
     "preview": {
@@ -10,7 +11,8 @@
         "autoIncrement": "versionCode"
       },
       "ios": {
-        "simulator": true
+        "simulator": true,
+        "autoIncrement": "buildNumber"
       }
     },
     "production": {
@@ -19,7 +21,8 @@
         "autoIncrement": "versionCode"
       },
       "ios": {
-        "image": "latest"
+        "image": "latest",
+        "autoIncrement": "buildNumber"
       }
     }
   },
