@@ -4,13 +4,29 @@
   },
   "build": {
     "preview": {
+      "autoIncrement": true,
       "android": {
-        "distribution": "internal"
+        "distribution": "internal",
+        "autoIncrement": "versionCode"
       },
       "ios": {
         "simulator": true
       }
     },
-    "production": {}
+    "production": {
+      "autoIncrement": true,
+      "android": {
+        "autoIncrement": "versionCode"
+      }
+    }
+  },
+  "submit": {
+    "preview": {
+      "android": {
+        "track": "internal",
+        "servicesAccountKeyPath": "google-services.json",
+        "releaseStatus": "draft"
+      }
+    }
   }
 }
