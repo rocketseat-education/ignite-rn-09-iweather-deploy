@@ -43,7 +43,7 @@ export function Search() {
 
         <View style={styles.content}>
           <Text style={styles.title}>
-            Boas vindas ao <Text style={styles.brand}>iWeather</Text>
+            Previsão do tempo com <Text style={styles.brand}>iWeather</Text>
           </Text>
 
           <Text style={styles.subtitle}>
