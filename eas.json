@@ -26,6 +26,9 @@
         "track": "internal",
         "servicesAccountKeyPath": "google-services.json",
         "releaseStatus": "draft"
+      },
+      "ios": {
+        "appleId": "rennan.douglas@rocketseat.team"
       }
     }
   }
