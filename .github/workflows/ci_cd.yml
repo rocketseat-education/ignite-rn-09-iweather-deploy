@@ -47,6 +47,9 @@ jobs:
           packager: npm
           token: ${{ secrets.EAS_EXPO_TOKEN }}
 
+      - name: Install Dependencies
+        uses: npm install
+
       - name: Get config file
         env: 
           GOOGLE_SERVICES_64: ${{ secrets.EAS_GOOGLE_PLAY_API }}
@@ -55,4 +58,4 @@ jobs:
           base64 -d -i google-services.json.b64 > google-services.json
 
       - name: Build and Submit
-        run: eas build --platform android --profile preview --non-interactive --auto-submit-with-profile=preview --no-wait
+        run: EXPO_APPLE_APP_SPECIFIC_PASSWORD=${{ secrets.EAS_APPLE_APP_SPECIFIC_PASSWORD }} eas build --platform ios --profile preview --non-interactive --auto-submit-with-profile=preview --no-wait

@@ -17,6 +17,9 @@
       "autoIncrement": true,
       "android": {
         "autoIncrement": "versionCode"
+      },
+      "ios": {
+        "image": "latest"
       }
     }
   },
@@ -28,7 +31,8 @@
         "releaseStatus": "draft"
       },
       "ios": {
-        "appleId": "rennan.douglas@rocketseat.team"
+        "appleId": "rennan.douglas@rocketseat.team",
+        "ascAppId": ""
       }
     }
   }
